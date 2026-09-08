@@ -4,22 +4,22 @@ Repositori ini berisi seluruh dokumentasi pembelajaran, latihan (*exercise*), da
 
 ---
 
-## 📌 Daftar Milestone
+## Daftar Milestone
 
 | Milestone | Folder | Fokus Materi | Status |
 | :---: | :--- | :--- | :---: |
-| **1** | [`01-JavaScript-fundamental/`](./01-JavaScript-fundamental/) | Fondasi & JavaScript Modern (ES6+) | ✅ Selesai |
-| **2** | [`02-async-api-typescript/`](./02-async-api-typescript/) | Async JavaScript, API & TypeScript | ✅ Selesai |
-| **3** | `03-nodejs-fundamentals/` | Node.js Fundamentals | ⏳ Mendatang |
-| **4** | `04-react-fundamentals/` | React Fundamentals | ⏳ Mendatang |
-| **5** | `05-nextjs-strapi-final-project/` | Next.js, Atomic Component & Integrasi Fullstack (Strapi) | ⏳ Mendatang |
+| **1** | [`01-JavaScript-fundamental/`](./01-JavaScript-fundamental/) | Fondasi & JavaScript Modern (ES6+) | Selesai |
+| **2** | [`02-async-api-typescript/`](./02-async-api-typescript/) | Async JavaScript, API & TypeScript | Belum |
+| **3** | `03-nodejs-fundamentals/` | Node.js Fundamentals | Belum |
+| **4** | `04-react-fundamentals/` | React Fundamentals | Belum |
+| **5** | `05-nextjs-strapi-final-project/` | Next.js, Atomic Component & Integrasi Fullstack (Strapi) | Belum |
 
 > **Catatan Milestone 5:**  
 > Pada Milestone 5 project akan dipecah menjadi `frontend-nextjs/` dan `backend-strapi/` untuk memisahkan arsitektur frontend dan backend/CMS.
 
 ---
 
-## 📂 Struktur Repositori
+## Struktur Repositori
 
 ```text
 sawala-learning/
@@ -47,7 +47,7 @@ sawala-learning/
 
 ---
 
-## ⚙️ Prasyarat & Instalasi Global
+## Prasyarat & Instalasi Global
 
 - **Node.js** (v18 atau lebih baru)
 - **NPM** (bawaan Node.js)
@@ -60,7 +60,7 @@ cd sawala-learning
 
 ---
 
-## 📖 Panduan Menjalankan Kode
+## Panduan Menjalankan Kode
 
 Setiap folder milestone dan mini-project memiliki file `README.md` masing-masing yang menjelaskan cara menjalankan file serta dependensi yang dibutuhkan:
 - [Milestone 1: JavaScript Fundamentals](./01-JavaScript-fundamental/README.md)
