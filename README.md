@@ -9,7 +9,7 @@ Repositori ini berisi seluruh dokumentasi pembelajaran, latihan (*exercise*), da
 | Milestone | Folder | Fokus Materi | Status |
 | :---: | :--- | :--- | :---: |
 | **1** | [`01-JavaScript-fundamental/`](./01-JavaScript-fundamental/) | Fondasi & JavaScript Modern (ES6+) | Selesai |
-| **2** | [`02-async-api-typescript/`](./02-async-api-typescript/) | Async JavaScript, API & TypeScript | Belum |
+| **2** | `02-async-api-typescript/`| Async JavaScript, API & TypeScript | Belum |
 | **3** | `03-nodejs-fundamentals/` | Node.js Fundamentals | Belum |
 | **4** | `04-react-fundamentals/` | React Fundamentals | Belum |
 | **5** | `05-nextjs-strapi-final-project/` | Next.js, Atomic Component & Integrasi Fullstack (Strapi) | Belum |
