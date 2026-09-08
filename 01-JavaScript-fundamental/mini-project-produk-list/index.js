@@ -12,31 +12,31 @@ function tampilkanProduk (produk, item) {
 
 daftarProduk.forEach(tampilkanProduk);
 
-const namaProduk = daftarProduk.map((produk) => {
+const namaProduk = daftarProduk.map(function(produk) {
 return produk.nama;
 });
 console.log("-- Nama Produk --");
 console.log(namaProduk);
 
-const produkMakanan = daftarProduk.filter((produk) => {
+const produkMakanan = daftarProduk.filter(function(produk) {
   return produk.kategori === "Makanan";
 });
-console.log("-- Daftar Produk Makanan --");
+console.log("-- DaftarProduk Makanan --");
 console.log(produkMakanan);
 
-const produkMinuman = daftarProduk.filter((produk) => {
+const produkMinuman = daftarProduk.filter(function(produk) {
   return produk.kategori === "Minuman";
 });
 console.log("-- Daftar Produk Minuman --");
 console.log(produkMinuman);
 
-const cariProduk = daftarProduk.find((produk) => {
+const cariProduk = daftarProduk.find(function(produk) {
   return produk.nama === "Bakso";
 });
-console.log("-- Cari Produk --");
+console.log("-- CariProduk --");
 console.log(cariProduk);
 
-const totalHarga = daftarProduk.reduce((total, produk) => {
+const totalHarga = daftarProduk.reduce(function(total, produk) {
   return total + produk.harga;
 }, 0);
 const rataRata = totalHarga / daftarProduk.length;
