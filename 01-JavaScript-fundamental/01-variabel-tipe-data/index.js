@@ -9,7 +9,7 @@ nilai = 90;
 
 let sisaUangJajan = 10000;
 sisaUangJajan = sisaUangJajan - 5000;
-sisaUangJajan = sisaUangJajan - 3000;
+
 
 let hargaPermen = 1000;
 let hargaBiskuit = 2000;
@@ -24,7 +24,7 @@ Nilai: ${nilai}
 Sisa Uang Jajan: ${sisaUangJajan}
 Total Harga:: ${totalHarga}`);
 
-console.log("----------------------");
+
 //mengecek tipe data
 console.log("Tipe Nama: ", typeof nama);
 console.log("Tipe Umur: ", typeof umur);

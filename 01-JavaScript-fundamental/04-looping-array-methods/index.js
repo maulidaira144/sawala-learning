@@ -81,11 +81,6 @@ const rataRata = totalNilai / siswa.length;
 
 console.log("=== HASIL NILAI ===");
 console.log("Total nilai:", totalNilai);
-console.log("Rata-rata:", rataRata);
+console.log(`Rata-rata: ${rataRata.toFixed(2)}`);
 
-const siswaTerbaik = [...siswa].sort((a, b) => {
-  return b.nilai - a.nilai;
-});
 
-console.log("=== RANKING SISWA ===");
-console.log(siswaTerbaik);
