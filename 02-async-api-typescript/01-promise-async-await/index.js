@@ -15,7 +15,7 @@ function pesananDibuat(makananTersedia, minumanTersedia) {
     return new Promise((resolve,reject) => {
         setTimeout(() => {
             if (makananTersedia === true && minumanTersedia === true) {
-                resolve("Tunggu pesanan baso dan minuman sedang di buat")
+                resolve("Tunggu pesanan baso dan minuman sedang dibuat")
             }
             else {
                 reject("Maaf, pesanan baso dan minuman ternyata sudah habis!")
@@ -24,10 +24,15 @@ function pesananDibuat(makananTersedia, minumanTersedia) {
     })
 }
 
-function pesananDisajikan (){
+function pesananDisajikan (makananTersedia, minumanTersedia) {
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            resolve("Pesanan baso dan minuman siap disajikan!")
+            if (makananTersedia === true && minumanTersedia === true) {
+                resolve("Pesanan baso dan minuman siap disajikan!")
+            }
+            else {
+                reject("Maaf, pesanan baso dan minuman gagal disajikan!")
+            }
         }, 2000)
     })
 }
@@ -38,7 +43,7 @@ async function tampilkanPesanan(){
         console.log(status1)
         const status2 = await pesananDibuat(true, true)
         console.log(status2)
-        const status3 = await pesananDisajikan()
+        const status3 = await pesananDisajikan(true, true)
         console.log(status3)
 
     } catch (error) {
