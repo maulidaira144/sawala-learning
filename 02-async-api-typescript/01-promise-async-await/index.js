@@ -1,3 +1,14 @@
+function cekKetersediaan(makananTersedia, minumanTersedia) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (makananTersedia === true && minumanTersedia === true) {
+                resolve("Pesanan baso dan minuman tersedia");
+            } else {
+                reject("Pesanan baso dan minuman tidak tersedia");
+            }
+        }, 2000)
+    })
+}
 function pesanMakanan(makananTersedia, minumanTersedia ){
     return new Promise((resolve,reject ) => {
         setTimeout(() => {
@@ -39,12 +50,14 @@ function pesananDisajikan (makananTersedia, minumanTersedia) {
 
 async function tampilkanPesanan(){
     try {
-        const status1 = await pesanMakanan(true, true)
+        const status1 = await cekKetersediaan(true, true)
         console.log(status1)
-        const status2 = await pesananDibuat(true, true)
+        const status2 = await pesanMakanan(true, true)
         console.log(status2)
-        const status3 = await pesananDisajikan(true, true)
+        const status3 = await pesananDibuat(true, true)
         console.log(status3)
+        const status4 = await pesananDisajikan(true, true)
+        console.log(status4)
 
     } catch (error) {
         console.log(error)
