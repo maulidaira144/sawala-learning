@@ -89,3 +89,9 @@ async function jalankanSemua() {
     await deleteData();
 } 
 jalankanSemua();
+
+//200: ok
+//201: created/data berhasil dibuat
+//400: bad request/req yg dikirim tdk benar
+//404: not found
+//500: internal server error

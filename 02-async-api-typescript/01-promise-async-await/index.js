@@ -68,3 +68,6 @@ async function tampilkanPesanan(){
 }
 
 tampilkanPesanan();
+
+//tindakan resolve(berhasil), reject(gagal)
+//status promise pending(menunggu), fulfilled(berhasil), rejected(gagal)
