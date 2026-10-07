@@ -1,4 +1,4 @@
-const url = "https://jsonplaceholder.typicode.com/post";
+const url = "https://jsonplaceholder.typicode.com/pos";
 
 async function ambilData(){
 
@@ -24,3 +24,5 @@ async function ambilData(){
 }
 
 ambilData();
+
+//throw artinya kita sengaja melempar error supaya proses di dalam try berhenti dan pindah ke catch
