@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F1F4F8;
+  color: #142B4A;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 36px;
+  color: #142B4A;
+  letter-spacing: -0.5px;
+}
+
+main > p {
+  text-align: center;
+  color: #64748B;
+  margin-bottom: 32px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+article {
+  background-color: #FFFFFF;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #DCE3EC;
+  box-shadow: 0 4px 14px rgba(20, 43, 74, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(20, 43, 74, 0.10);
+}
+
+article p:first-child {
+  color: #315A85;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+article h2 {
+  font-size: 22px;
+  margin: 12px 0;
+  color: #142B4A;
+}
+
+article p {
+  line-height: 1.6;
+  color: #64748B;
+}
+
+button {
+  background-color: #142B4A;
+  color: #FFFFFF;
+  border: 1px solid #142B4A;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #23466F;
+  border-color: #23466F;
+}
+
+button:focus-visible {
+  outline: 3px solid #93B4D8;
+  outline-offset: 3px;
+}
+
+main > input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  color: #142B4A;
+}
+
+main > input::placeholder {
+  color: #94A3B8;
+}
+
+main > input:focus {
+  outline: 2px solid #315A85;
+  border-color: transparent;
+}
+
+main > select {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  padding: 12px 16px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #142B4A;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main > select:focus {
+  outline: 2px solid #315A85;
+  border-color: transparent;
+}
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 28px 16px;
+  }
+
+  main > h1 {
+    font-size: 30px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  article {
+    padding: 20px;
+  }
+}
